@@ -57,7 +57,8 @@
 
       if (prev) prev.addEventListener('click', () => { index -= 1; update(); });
       if (next) next.addEventListener('click', () => { index += 1; update(); });
-      window.addEventListener('resize', update, { passive: true });
+      let resizeTimer;
+      window.addEventListener('resize', () => { window.clearTimeout(resizeTimer); resizeTimer = window.setTimeout(update, 120); }, { passive: true });
       requestAnimationFrame(update);
     });
   }
@@ -75,7 +76,7 @@
 
     clickableImages.forEach((image) => {
       image.addEventListener('click', () => {
-        lightboxImage.src = image.currentSrc || image.src;
+        lightboxImage.src = image.dataset.full || image.currentSrc || image.src;
         lightboxImage.alt = image.alt || 'תמונה מוגדלת';
         lightbox.classList.add('is-open');
       });

@@ -1,0 +1,19 @@
+{
+  "html_files": [
+    "index.html",
+    "option-1-classic-book.html",
+    "option-2-modern-gallery.html",
+    "option-3-dark-museum.html",
+    "option-2-gallery.html"
+  ],
+  "errors": [],
+  "warnings": [],
+  "checks": [
+    "RTL lang/dir",
+    "local assets exist",
+    "no external http refs",
+    "image alt/width/height",
+    "CSS local urls",
+    "no setInterval/while true"
+  ]
+}

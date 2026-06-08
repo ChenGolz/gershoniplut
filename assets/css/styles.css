@@ -874,3 +874,143 @@ img { content-visibility: auto; }
   border-inline-start: 0;
   border-inline-end: 1px solid rgba(189,119,71,.55);
 }
+
+
+/* ==================================================================
+   FINAL MOBILE + QA POLISH PASS
+   Purpose: stronger mobile layouts, faster galleries, no title-over-face,
+   and clearer distinction among the three design directions.
+================================================================== */
+html { overflow-x: hidden; }
+body { overflow-x: clip; }
+[id] { scroll-margin-block-start: 92px; }
+.site-header { inset-inline: 0; }
+.site-nav a { white-space: nowrap; }
+.nav-toggle { border-radius: 999px; }
+img { -webkit-user-drag: none; }
+.lightbox img { content-visibility: visible; }
+
+/* Improve touch targets and prevent accidental overflow */
+.outline-button, .copper-button, .ghost-button, .document-links a, .candle-button, .gallery-page-back {
+  min-block-size: 46px;
+  border-radius: 0;
+  text-align: center;
+}
+.gallery-arrow { touch-action: manipulation; }
+.gallery-track { overscroll-behavior-inline: contain; }
+
+/* Design 1: closer to luxury printed memorial book */
+.design-classic .site-header { box-shadow: 0 10px 30px rgba(120, 82, 42, .045); }
+.classic-hero-copy { max-inline-size: 680px; margin-inline: auto; }
+.classic-duo { border-radius: 2px; }
+.classic-gallery { padding-inline: clamp(20px, 4vw, 56px); }
+.classic-track img { object-position: center; }
+.design-classic .quote-grid blockquote { border-radius: 2px; }
+
+/* Design 2: distinct contemporary gallery system */
+.design-gallery .gallery-hero { background: linear-gradient(135deg, #f8f4eb 0%, #edf3ef 100%); }
+.design-gallery .gallery-band { border-radius: 18px; }
+.design-gallery .gallery-band-title h2 { color: #24423d; }
+.design-gallery .magazine-track img { border-radius: 10px; }
+.design-gallery .quote-grid blockquote { border-color: rgba(63,98,93,.2); background: rgba(255,255,255,.74); }
+.gallery-page-shell .site-header { z-index: 50; }
+.gallery-page-shell main { background: linear-gradient(180deg, #f7f3ea 0%, #eef5f1 45%, #f7f3ea 100%); }
+.modern-masonry-gallery.full-gallery-grid figure { border-radius: 14px; }
+.modern-masonry-gallery.full-gallery-grid figcaption { min-block-size: 44px; display: flex; align-items: center; }
+
+/* Design 3: museum/exhibition, title never covers faces */
+.design-museum .site-header { box-shadow: 0 10px 38px rgba(0,0,0,.28); }
+.museum-hero-split .museum-portrait img { object-position: 47% 42%; }
+.museum-hero-split .museum-hero-panel { border-radius: 0; }
+.design-museum .fragment-gallery { padding-block-start: clamp(42px, 7vw, 80px); }
+.design-museum .note-cards blockquote { border: 1px solid rgba(189,119,71,.18); }
+.design-museum .museum-footer { background-position: center 48%; }
+
+@media (min-width: 1180px) {
+  .museum-hero-split { grid-template-columns: minmax(520px, 1fr) minmax(520px, .92fr); }
+  .museum-hero-split .museum-hero-panel { transform: translateX(-2vw); }
+}
+
+@media (max-width: 980px) {
+  body { line-height: 1.72; }
+  .desktop-only { display: none !important; }
+  .site-header { min-block-size: 64px; padding-inline: 14px; gap: 12px; }
+  .brand { font-size: .95rem; }
+  .monogram { inline-size: 46px; block-size: 46px; }
+  .nav-toggle { display: inline-flex; align-items: center; justify-content: center; margin-inline-start: auto; min-block-size: 42px; padding-inline: 1rem; background: rgba(255,255,255,.3); }
+  .site-nav { inset-block-start: calc(100% + 8px); inset-inline: 14px; max-block-size: calc(100vh - 92px); overflow: auto; border-radius: 18px; }
+  .site-nav a { white-space: normal; font-size: 1rem; }
+  .section-wrap { inline-size: min(100% - 28px, 1180px); }
+
+  .classic-hero, .gallery-hero { padding: 0; }
+  .classic-hero-copy, .gallery-hero-copy { padding: 34px 22px 28px; text-align: center; justify-self: center; }
+  .classic-hero-copy h1, .gallery-hero-copy h1, .museum-hero-panel h1 { font-size: clamp(3.45rem, 15vw, 5.1rem); line-height: .92; letter-spacing: -.055em; }
+  .classic-hero-copy .title-rule { inline-size: min(220px, 62vw); }
+  .classic-hero-image, .gallery-hero-photo { inline-size: 100%; min-block-size: 0; }
+  .classic-hero-image img, .gallery-hero-photo img { block-size: clamp(280px, 66vw, 460px); object-fit: cover; }
+  .classic-hero-image img { object-position: center 40%; }
+  .gallery-hero-photo img { object-position: center 38%; }
+  .gallery-hero-photo::before { inset: 20px 24px 12px 18px; }
+  .gallery-hero-photo::after { display: none; }
+  .gallery-hero-photo figcaption { inset-inline-start: 16px; inset-block-end: 12px; }
+
+  .classic-intro { padding-block: 30px 18px; }
+  .classic-duo { margin-block-start: 12px; padding: 26px 20px; gap: 24px; }
+  .classic-gallery, .classic-timeline, .classic-tributes, .memorial-documents { padding-block: 36px; }
+  .quote-grid { gap: 14px; }
+  .quote-grid blockquote { padding: 22px; }
+  .timeline-row, .journey-path { gap: 16px; }
+  .timeline-row li, .journey-path li { align-items: stretch; text-align: start; padding: 18px; border: 1px solid rgba(185,145,77,.18); background: rgba(255,255,255,.32); }
+  .timeline-row li span, .journey-path li span { margin-inline: 0; }
+
+  .gallery-story { gap: 24px; padding-inline: 0; }
+  .polaroid-card { max-inline-size: 330px; justify-self: center; }
+  .gallery-band { display: block; padding: 22px; border-radius: 18px; }
+  .gallery-band-title { margin-block-end: 20px; }
+  .gallery-band-title h2 { font-size: clamp(2rem, 11vw, 3.3rem); }
+  .magazine-track img, .classic-track img, .collage-track img { block-size: clamp(210px, 54vw, 300px) !important; }
+  .gallery-arrow { background: rgba(255,255,255,.82); box-shadow: 0 10px 26px rgba(33,30,25,.12); }
+  .gallery-arrow.prev { inset-inline-start: 6px; }
+  .gallery-arrow.next { inset-inline-end: 6px; }
+
+  .gallery-page-shell .site-header { position: sticky; top: 0; }
+  .gallery-page-hero h1 { font-size: clamp(3rem, 14vw, 5rem); }
+  .gallery-curator { padding-block: 34px 18px; }
+  .gallery-collection { padding-block: 30px; }
+  .modern-masonry-gallery.full-gallery-grid figure { border-width: 7px; border-radius: 12px; }
+
+  .museum-header .candle-button { display: none; }
+  .museum-hero-split { padding-block-start: 0; }
+  .museum-hero-split .museum-portrait { min-block-size: clamp(320px, 72vw, 510px); }
+  .museum-hero-split .museum-portrait img { object-position: center 42%; }
+  .museum-hero-split .museum-hero-panel { margin-block: -44px 34px; width: min(100% - 32px, 620px); }
+  .museum-rail { display: none; }
+  .museum-about .parchment-panel, .museum-quote { padding: 30px 22px; }
+  .museum-journey, .museum-tributes { padding-inline: 18px; }
+  .note-cards { gap: 14px; }
+  .share-memory { justify-self: start; }
+  .museum-footer { min-block-size: 160px; padding-inline: 18px; }
+}
+
+@media (max-width: 520px) {
+  .site-header { min-block-size: 60px; }
+  .nav-toggle { font-size: .92rem; }
+  .section-heading h2, .chapter-heading h2 { line-height: 1.04; }
+  .classic-hero-copy h1, .gallery-hero-copy h1, .museum-hero-panel h1 { font-size: clamp(3.05rem, 17vw, 4.25rem); }
+  .life-dates { font-size: .95rem; }
+  .eyebrow { font-size: .72rem; letter-spacing: .12em; }
+  .classic-duo h3 { font-size: 1.85rem; }
+  .document-links { flex-direction: column; align-items: stretch; }
+  .document-links a { inline-size: 100%; }
+  .button-row { flex-direction: column; align-items: stretch; }
+  .button-row a { inline-size: 100%; }
+  .modern-masonry-gallery.full-gallery-grid { columns: 1 !important; }
+  .modern-masonry-gallery.full-gallery-grid figure { margin-block-end: 18px; }
+  .gallery-page-back { inline-size: 100%; justify-content: center; }
+  .museum-hero-split .museum-hero-panel { padding: 22px 18px; width: min(100% - 24px, 620px); }
+  .museum-hero-panel p:not(.eyebrow):not(.life-dates) { font-size: .98rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .001ms !important; animation-duration: .001ms !important; }
+}
