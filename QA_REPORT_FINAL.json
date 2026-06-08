@@ -1,0 +1,15 @@
+{
+  "package": "memorial-pages-designs-hebrew-text-blue-polished",
+  "html_files": [
+    "index.html",
+    "option-1-classic-book.html",
+    "option-2-gallery.html",
+    "option-2-modern-gallery.html",
+    "option-3-dark-museum.html"
+  ],
+  "missing_assets_or_links": [],
+  "warnings": [],
+  "hebrew_text_bad_patterns_found": [],
+  "option_2_palette": "pastel blue with sand, rose and soft-gold touches",
+  "static_qa": "passed"
+}
