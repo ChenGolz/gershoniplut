@@ -1,0 +1,210 @@
+{
+  "photo-01.webp": {
+    "source": "photo-01.jpg",
+    "width": 471,
+    "height": 686,
+    "original_width": 471,
+    "original_height": 686,
+    "bytes": 23334
+  },
+  "photo-02.webp": {
+    "source": "photo-02.jpg",
+    "width": 619,
+    "height": 1100,
+    "original_width": 1134,
+    "original_height": 2016,
+    "bytes": 33228
+  },
+  "photo-03.webp": {
+    "source": "photo-03.jpg",
+    "width": 825,
+    "height": 1100,
+    "original_width": 1200,
+    "original_height": 1600,
+    "bytes": 173032
+  },
+  "photo-04.webp": {
+    "source": "photo-04.jpg",
+    "width": 618,
+    "height": 1100,
+    "original_width": 899,
+    "original_height": 1599,
+    "bytes": 42286
+  },
+  "photo-05.webp": {
+    "source": "photo-05.jpg",
+    "width": 825,
+    "height": 1100,
+    "original_width": 1530,
+    "original_height": 2040,
+    "bytes": 32746
+  },
+  "photo-06.webp": {
+    "source": "photo-06.jpg",
+    "width": 825,
+    "height": 1100,
+    "original_width": 1200,
+    "original_height": 1600,
+    "bytes": 56330
+  },
+  "photo-07.webp": {
+    "source": "photo-07.jpg",
+    "width": 1100,
+    "height": 1069,
+    "original_width": 2048,
+    "original_height": 1991,
+    "bytes": 34514
+  },
+  "photo-08.webp": {
+    "source": "photo-08.jpg",
+    "width": 619,
+    "height": 1100,
+    "original_width": 900,
+    "original_height": 1600,
+    "bytes": 36158
+  },
+  "photo-09.webp": {
+    "source": "photo-09.jpg",
+    "width": 619,
+    "height": 1100,
+    "original_width": 900,
+    "original_height": 1600,
+    "bytes": 43070
+  },
+  "photo-10.webp": {
+    "source": "photo-10.jpg",
+    "width": 1100,
+    "height": 534,
+    "original_width": 1600,
+    "original_height": 777,
+    "bytes": 166518
+  },
+  "photo-11.webp": {
+    "source": "photo-11.jpg",
+    "width": 1100,
+    "height": 825,
+    "original_width": 1600,
+    "original_height": 1200,
+    "bytes": 90806
+  },
+  "photo-12.webp": {
+    "source": "photo-12.jpg",
+    "width": 1100,
+    "height": 619,
+    "original_width": 1280,
+    "original_height": 720,
+    "bytes": 61544
+  },
+  "photo-13.webp": {
+    "source": "photo-13.jpg",
+    "width": 1100,
+    "height": 1100,
+    "original_width": 1528,
+    "original_height": 1528,
+    "bytes": 138752
+  },
+  "photo-14.webp": {
+    "source": "photo-14.jpg",
+    "width": 619,
+    "height": 1100,
+    "original_width": 1134,
+    "original_height": 2016,
+    "bytes": 67732
+  },
+  "photo-15.webp": {
+    "source": "photo-15.jpg",
+    "width": 1100,
+    "height": 619,
+    "original_width": 2048,
+    "original_height": 1152,
+    "bytes": 46908
+  },
+  "photo-16.webp": {
+    "source": "photo-16.jpg",
+    "width": 1100,
+    "height": 619,
+    "original_width": 1600,
+    "original_height": 900,
+    "bytes": 89210
+  },
+  "photo-17.webp": {
+    "source": "photo-17.jpg",
+    "width": 1100,
+    "height": 825,
+    "original_width": 1600,
+    "original_height": 1200,
+    "bytes": 123530
+  },
+  "photo-18.webp": {
+    "source": "photo-18.jpg",
+    "width": 962,
+    "height": 698,
+    "original_width": 962,
+    "original_height": 698,
+    "bytes": 126862
+  },
+  "photo-19.webp": {
+    "source": "photo-19.jpg",
+    "width": 1100,
+    "height": 762,
+    "original_width": 1974,
+    "original_height": 1368,
+    "bytes": 38470
+  },
+  "photo-20.webp": {
+    "source": "photo-20.jpg",
+    "width": 1100,
+    "height": 747,
+    "original_width": 2200,
+    "original_height": 1493,
+    "bytes": 42748
+  },
+  "photo-21.webp": {
+    "source": "photo-21.jpg",
+    "width": 1100,
+    "height": 825,
+    "original_width": 2200,
+    "original_height": 1650,
+    "bytes": 28576
+  },
+  "photo-22.webp": {
+    "source": "photo-22.jpg",
+    "width": 825,
+    "height": 1100,
+    "original_width": 1200,
+    "original_height": 1600,
+    "bytes": 61950
+  },
+  "photo-23.webp": {
+    "source": "photo-23.jpg",
+    "width": 480,
+    "height": 640,
+    "original_width": 480,
+    "original_height": 640,
+    "bytes": 20440
+  },
+  "photo-24.webp": {
+    "source": "photo-24.jpg",
+    "width": 1275,
+    "height": 866,
+    "original_width": 1275,
+    "original_height": 866,
+    "bytes": 69860
+  },
+  "photo-25.webp": {
+    "source": "photo-25.jpg",
+    "width": 1040,
+    "height": 720,
+    "original_width": 1040,
+    "original_height": 720,
+    "bytes": 39452
+  },
+  "photo-26.webp": {
+    "source": "photo-26.jpg",
+    "width": 1040,
+    "height": 720,
+    "original_width": 1040,
+    "original_height": 720,
+    "bytes": 53984
+  }
+}
