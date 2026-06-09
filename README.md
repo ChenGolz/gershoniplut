@@ -1,21 +1,19 @@
-# סוניה ואמיר פלוט — עמודי זיכרון
+# Sonia & Amir Plot — Memorial Page Design Options
 
-חבילה סטטית בעברית מלאה הכוללת שלושה עיצובי זיכרון ועמוד גלריה מלא.
+This folder contains several sample memorial page designs for Sonia and Amir Plot. At the end of the review process, only one of these sample pages is intended to be chosen as the final public page.
 
-## עמודים
-- `index.html` — שער כניסה לשלושת העיצובים
-- `option-1-classic-book.html` — ספר זיכרון קלאסי
-- `option-2-modern-gallery.html` — גלריה מודרנית בגווני כחול־פסטל
-- `option-2-gallery.html` — גלריה מלאה
-- `option-3-dark-museum.html` — מוזיאון זיכרון כהה
+## Pages
 
-## תוכן מרכזי ששולב
-- אמיר פלוט ז״ל: 7.7.1926–1.4.2025
-- סוניה פלוט ז״ל: 12.6.1933–27.5.2025
-- העלייה ארצה בשנת 1952 עם הגרעין השלישי לברור חיל
-- תקופת ההכשרה בקיבוץ תל יוסף וההגעה לברור חיל
-- לידתה של סוניה בבאטאטאיס שבברזיל והסיפור על רישום ״בית הטייס״
-- אמיר כמזכיר התנועה בברזיל והחיבור לקיבוץ ולקהילה
+- `index.html` — design selection page
+- `option-4-journey-map.html` — journey / atlas style
+- `option-5-family-archive.html` — family archive / warm album style
+- `option-6-pastel-blue.html` — quiet light-blue editorial style
+- `option-7-cinematic.html` — cinematic memorial style
+- `gallery-full.html` — full gallery page
 
-## העלאה לאתר
-העלו את כל הקבצים לתיקיית השורש של המאגר ב־GitHub Pages. אין צורך בשרת, התקנות או בנייה מוקדמת.
+## Implementation notes
+
+- All pages start with the names and life dates.
+- Text is written in a respectful public memorial tone and does not mention the fund directly.
+- Images are shown with their original proportions and are not intentionally cropped into fixed white boxes.
+- The site is static HTML/CSS/JS and can be uploaded as-is to GitHub Pages or another static host.
